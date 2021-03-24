@@ -210,7 +210,7 @@ app.layout = html.Div([
 
     html.Div(
         html.Label(['Select Year',dcc.Dropdown(
-        id='crossfilter-year--slider',
+        id='crossfilter-year--dropdown',
             options=[{'label': i, 'value': i} for i in available_years],
             value=2020
     )]), style={'width': '49%', 'padding': '0px 20px 20px 20px'})
@@ -221,7 +221,7 @@ app.layout = html.Div([
     dash.dependencies.Output('crossfilter-indicator-scatter', 'figure'),
     [dash.dependencies.Input('crossfilter-xaxis-column', 'value'),
      dash.dependencies.Input('crossfilter-yaxis-column', 'value'),
-     dash.dependencies.Input('crossfilter-year--slider', 'value'),
+     dash.dependencies.Input('crossfilter-year--dropdown', 'value'),
      dash.dependencies.Input('conference-filter', 'value')])
 def update_graph(xaxis_column_name, yaxis_column_name,
                  year_value, conference_value):
