@@ -13,7 +13,7 @@ import plotly.express as px
 
 from cfb_dataframe import df_cfb
 
-external_stylesheets = ['https://raw.githubusercontent.com/tjmcintyre/CS5010_Semester_Project/main/cfb.css']
+external_stylesheets = ['https://codepen.io/shshaw/pen/vJNMQY.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 # Creating options for variable, conference filter, and year dropdown menus
 available_indicators = df_cfb['Indicator Name'].unique()
@@ -34,7 +34,8 @@ app.layout = html.Div([
                 value='Def.Rank',
             )]),
         ],
-        style={'width': '49%', 'display': 'inline-block', 'background':'#E57200'}),
+        style={'width': '49%', 'display': 'inline-block', 'color':'#232D4B',
+               'backgroundColor': '#E57200'}),
         # Creating y-variable dropdown item
         html.Div([
             html.Label(['Y-variable Selection',dcc.Dropdown(
@@ -43,10 +44,9 @@ app.layout = html.Div([
                 value='WinPct'
             )]),
         ], style={'width': '49%', 'float': 'right', 'display': 'inline-block',
-                  'background':'#E57200'})
+                  'color':'#232D4B','backgroundColor': '#E57200'})
     ], style={
         'borderBottom': 'thin lightgrey solid',
-        'backgroundColor': '#232D4B',
         'padding': '10px 5px'
     }),
     # Creating conference filter dropdown item
@@ -57,7 +57,7 @@ app.layout = html.Div([
             value='FBS'
         )]),
     ], style={'width': '98%', 'display': 'inline-block', 'backgroundColor': '#E57200',
-              'padding': '0 20'}), 
+              'color': '#232D4B','padding': '0 20'}), 
     # Creating x vs. y scatterplot
     html.Div([
         dcc.Graph(
@@ -77,7 +77,8 @@ app.layout = html.Div([
         id='year-filter',
             options=[{'label': i, 'value': i} for i in available_years],
             value=2020
-    )]), style={'width': '49%', 'padding': '0px 20px 20px 20px', 'background':'#E57200'})
+    )]), style={'width': '49%', 'padding': '0px 20px 20px 20px', 'background':'#E57200',
+              'color': '#232D4B'})
 ])
         
 # Scatter-plot update 
