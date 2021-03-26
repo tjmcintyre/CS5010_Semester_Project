@@ -132,13 +132,16 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: rgb(50, 50, 50); 
-    --page-background: rgb(35, 45, 75);
-  background-color: var(--page-background);}
+  --color: rgb(230, 230, 230);
+  --border-color: darkgrey;
+  --border-radius: 5px;
+  --accent-negative: #FF4136;
+  --accent: #0074D9;
+  --content-background: #E57200;
+  --page-background: rgb(35, 45, 75);
+  background-color: var(--page-background);
+  font-family: sans-serif;
+}
 
 
 

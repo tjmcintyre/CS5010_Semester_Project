@@ -22,7 +22,8 @@ available_conferences = np.append(available_conferences,('FBS')) # Adding FBS fo
 available_years = df_cfb['Year'].unique()
 
 
-# 
+# Much of the app generation and update code is modified from the documentation
+# and examples found on dash.plotly.com
 app.layout = html.Div([
     html.Div([
         # Creating y-variable dropdown item
