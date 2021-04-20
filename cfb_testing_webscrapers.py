@@ -30,30 +30,43 @@ class CFBWikipediaTestCase(unittest.TestCase): #must inherit from unittest.TestC
     def test_4(self):
         self.assertEqual(nicknames["Virginia"], 'Cavaliers')
         
-    # Is the expected school associated with the correct mascot
     def test_5(self):
         self.assertEqual(nicknames.get('Air Force'), 'Falcons')
         
     def test_6(self):
         self.assertEqual(nicknames.get('Syracuse'), 'Orange')
+        
+    # Check that there are no missing mascot values for schools with known mascots
+    def test_7(self):
+        self.assertFalse(nicknames['Ohio State'] == '', msg= "The Ohio State mascot is not missing")
     
+    def test_8(self):
+        self.assertFalse(nicknames['Michigan'] == '', msg= "The Michigan mascot is not missing")
+   
 # testing that the web scraped information was pulled correctly from ESPN
 class CFBESPNTestCase(unittest.TestCase): #must inherit from unittest.TestCase
     
     # Are all school names stored correctly as keys
-    def test_7(self):
+    def test_9(self):
         self.assertEqual(len(logos.keys()),  131)
     
     # Are all logos stored correctly as values
-    def test_8(self):
+    def test_10(self):
         self.assertEqual(len(logos.values()),  131)
         
     # Is the expected logo id associated with the correct school
-    def test_9(self):
+    def test_11(self):
         self.assertTrue('50' in logos['Penn State'])
         
-    def test_10(self):
+    def test_12(self):
         self.assertTrue('333' in logos['Alabama'])
+        
+    # Check that there are no missing logo values for schools with known logos
+    def test_13(self):
+        self.assertFalse(logos['Auburn'] == '', msg= "The Auburn logo is not missing")
+    
+    def test_14(self):
+        self.assertFalse(logos['Navy'] == '', msg= "The Navy logo is not missing")
 
 if __name__ == '__main__':
     log_file = 'CFB Testing.txt'
