@@ -54,11 +54,6 @@ class CFBESPNTestCase(unittest.TestCase): #must inherit from unittest.TestCase
         
     def test_10(self):
         self.assertTrue('333' in logos['Alabama'])
-        
-   
-if __name__ == '__main__':
-    unittest.main()
-
 
 if __name__ == '__main__':
     log_file = 'CFB Testing.txt'
