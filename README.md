@@ -12,3 +12,5 @@ The excitement of college football immerses and intrigues the American populatio
 There is a massive amount of data that is tracked in college football games, thus building a tool to allow for quick user interactivity to learn more about potential variables of interest quickly would be beneficial. Using the python fundamentals we developed in CS5010 we will be able to find the correct packages to download and use to create our first interactive visualization tool.
 
 As alluded to above, one of the main goals is to better understand the predictive odds of a team’s success resulting from many variables within the data set. This tool will be useful in accelerating the process of exploratory data analysis (EDA). Our tool focuses on college football over the past couple years, however we will be able to determine the effectiveness of building a tool similar to ours for other domains. Another goal of the project is to determine whether we believe that our application will be easily repeatable for data sets in other areas of interest
+
+![Alt Text](https://github.com/tjmcintyre/CS5010_Semester_Project/blob/main/visual_app.PNG)
