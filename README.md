@@ -5,6 +5,8 @@ Project Proposal: https://docs.google.com/document/d/1ULxL9k9fj1PwqbpsGCye-g0TSL
 
 Project Write-Up: https://docs.google.com/document/d/1WUt8RvWxSfPZHYzZTPndZC_yx6vxmbR4um5nH9j9z7c/edit?usp=sharing
 
+Project Slides: https://docs.google.com/presentation/d/17yd_JY9fy70jhoNqaGMxflJvbpn7BBli6Ra5h0eDZ_4/edit#slide=id.gd0484c0135_0_0
+
 ## Introduction to the Project
 
 The excitement of college football immerses and intrigues the American population every fall. In order to better understand the predictive odds of a team’s success in a season and to identify trends over time, exploratory data analysis (EDA) is key to make these inferences. To do so, our project focuses on building an interactive tool that allows a user to perform exploratory analyses on college football teams from 2013 to 2020. This tool will then allow the user to make data-driven inferences and predictions using the statistics and trends identified. 
