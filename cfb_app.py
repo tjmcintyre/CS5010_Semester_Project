@@ -184,4 +184,4 @@ def update_y_timeseries(hoverData, y_variable):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
